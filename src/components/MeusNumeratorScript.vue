@@ -12,13 +12,21 @@
 <script lang="ts" setup>
 import { computed, ref } from 'vue';
 
-interface Props {
+defineProps<{
     valorem: number;
-}
+}>();
 
-const props = defineProps<Props>();
+const numerus = ref(valorem);
+const quadrataNumerus = computed(() => numerus.value * numerus.value);
+
+return {
+    numerus,
+    quadrataNumerus,
+};
+
+
+
+
 //variable reactiva hay que poner value
 
-const numerus = ref(props.valorem );
-const quadrataNumerus = computed(() => numerus.value * numerus.value);
 </script>
