@@ -2,25 +2,25 @@
     <div class="p-4 flex-1 overflow-y-auto">
         <div class="flex- flex-col space-y-2">
            
-
+      
 <ChatBullula :meus-est="true" nuntius="let's get out soon?"/>
-   
-<!--
+
+
 <ChatBullula 
 v-for="nuntius in nuntii"
 :key="nuntius.id"
 :meus-est="nuntius.meusEst" 
 :nuntius="nuntius.nuntius" 
 :imago="nuntius.imago" />
--->
 
+<!--
 <ChatBullula 
 v-for="nuntius in nuntii"
 :key="nuntius.id"
 :v-bind="nuntius"
- />
-
+ />-->
 </div>
+
 </div>
 </template>
 
