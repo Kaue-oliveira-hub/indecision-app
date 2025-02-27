@@ -6,8 +6,8 @@
     <div class="bg-blue-500 p-4 text-white flex justify-between items-center">
        <span> Mi esposa</span>
     </div>
-       <ChatNuntii />
-       <TextusArca />
+       <ChatNuntii :nuntii="nuntii"/>
+       <TextusArca @mitte-nuntius="($event) => cumNovumMuntius($event)"/>
     
 
 </div>
@@ -17,7 +17,7 @@
 <script lang="ts" setup>
 import ChatNuntii from '@/components/chat/ChatNuntii.vue';
 import TextusArca from '@/components/chat/TextusArca.vue';
-
-
+import { useChat } from '@/composables/useChat';
+const { nuntii, cumNovumMuntius } =useChat();
 
 </script>
