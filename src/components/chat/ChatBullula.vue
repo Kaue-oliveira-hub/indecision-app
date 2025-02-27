@@ -10,6 +10,7 @@
     <div class="bg-gray-300 text-black p-4 max-w-xs rounded-lg">
        
         <span class="capitalize"> {{ nuntius }}</span>
+        <img v-if="imago" :src="imago" alt="yes no" class="w-52 h-52">
             </div>
         </div>
 
